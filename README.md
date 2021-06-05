@@ -9,7 +9,7 @@
 Originalmente o Flexblog é um projeto desenvolvido durante o curso de Flexbox da Origamid. Para fins de estudos, reconstruí o projeto do zero,
 mesclando técnicas de CSS Grid Layout e Flexbox, seguindo a arquitetura SMACSS e tendo SASS como pré-processador CSS.
 
-### :computer
+### :computer: | :iphone:
 <img src="https://github.com/Cahmoraes/Flexblog-SMACSS/blob/main/src/img/examples/example.gif" alt="Flexblog">
 
 ## :computer: Tecnologias utilizadas

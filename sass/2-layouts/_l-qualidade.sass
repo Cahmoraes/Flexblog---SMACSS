@@ -1,0 +1,21 @@
+@use '../1-base/variables'
+@use '../1-base/mixins'
+@use '../1-base/placeholders'
+  
+$layout-name: l-qualidade
+
+.#{$layout-name}
+  @extend %container-align
+  @include mixins.padding-vertical(6rem)
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 4rem
+
+  @include mixins.d(m)
+    grid-template-columns: repeat(2, 1fr)
+    @include mixins.padding-vertical(4rem)
+
+  @include mixins.d(s)
+    grid-template-columns: 1fr
+    @include mixins.padding-vertical(3rem)
+  

@@ -1,0 +1,15 @@
+@use '../1-base/variables'
+@use '../1-base/mixins'
+@use '../1-base/placeholders'
+  
+$layout-name: l-introducao
+
+.#{$layout-name}
+  @extend %container-align
+  @include mixins.padding-vertical(6rem)
+  
+  @include mixins.d(s)
+    @include mixins.padding-vertical(3rem)
+
+  h1
+    @include mixins.section-title

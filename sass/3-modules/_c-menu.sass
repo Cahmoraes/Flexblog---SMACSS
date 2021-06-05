@@ -1,0 +1,21 @@
+@use '../1-base/variables'
+@use '../1-base/mixins'
+
+$component-name: c-menu
+
+.#{$component-name}
+  display: flex
+  font-size: 2rem
+
+  @include mixins.d(s)
+    font-size: 1.7rem
+
+  li + li
+    margin-left: 2rem
+
+  a
+    transition: .2s ease
+    display: block
+    
+    &:hover
+      color: variables.$secondary-color

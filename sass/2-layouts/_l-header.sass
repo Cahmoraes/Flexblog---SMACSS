@@ -1,0 +1,45 @@
+@use '../1-base/variables'
+@use '../1-base/mixins'
+@use '../1-base/placeholders'
+
+$layout-name: l-header
+.#{$layout-name}
+  color: variables.$white
+
+  a
+    color: inherit
+
+  span
+    @include mixins.d(s)
+      display: block
+      margin-bottom: 1rem
+
+
+  &__superior
+    @extend %padding-vertical
+    background-color: variables.$secondary-color
+  
+    > div
+      @extend %container-align
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+
+  &__inferior
+    @extend %padding-vertical
+    background-color: variables.$primary-color
+
+    > div
+      @extend %container-align
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap    
+
+  &__brand
+    font-size: 3.6rem
+    font-weight: bold
+    
+    @include mixins.d(s)
+      margin-bottom: 1rem
+      

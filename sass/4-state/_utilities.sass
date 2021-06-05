@@ -1,0 +1,26 @@
+@use '../1-base/variables'
+@use '../1-base/mixins'
+
+.u-before-purple
+  &::before
+    @include mixins.bar-decoration(variables.$purple)
+
+.u-before-red
+  &::before
+    @include mixins.bar-decoration(variables.$red)
+
+.u-before-blue
+    &::before
+      @include mixins.bar-decoration(variables.$blue)
+
+.u-before-purple-horizontal
+  &::before
+    @include mixins.bar-decoration-horizontal(variables.$purple)
+
+.u-before-red-horizontal
+  &::before
+    @include mixins.bar-decoration-horizontal(variables.$red)
+
+.u-before-blue-horizontal
+  &::before
+    @include mixins.bar-decoration-horizontal(variables.$blue)

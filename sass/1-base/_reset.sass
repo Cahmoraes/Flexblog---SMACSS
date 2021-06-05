@@ -1,0 +1,30 @@
+@use './mixins'
+  
+*, *::after, *::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+html
+  font-size: 62.5%
+  @include mixins.d(s)
+    font-size: 58%
+
+body
+  font-size: 1.6rem
+  font-family: "Nunito", Helvetica, Arial, sans-serif
+
+img
+  max-width: 100%
+  display: block
+
+a
+  text-decoration: none
+
+ul, ol
+  list-style: none
+
+p + p
+  margin-top: 1.6rem

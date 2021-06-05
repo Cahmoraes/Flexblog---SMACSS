@@ -1,0 +1,81 @@
+@use '../1-base/variables'
+@use '../1-base/mixins'
+
+$component-name: c-preco
+
+.#{$component-name}
+  flex: 1 1 26rem
+  border: 4px solid variables.$white
+  padding: 2rem
+  margin: 1rem
+
+  &.order-0-mobile
+    @include mixins.d(m)
+      order: 0
+    @include mixins.d(s)
+      order: 0
+
+  &.order-1-mobile
+    @include mixins.d(m)
+      order: 1
+    @include mixins.d(s)
+      order: 1
+
+  &.order-2-mobile
+    @include mixins.d(m)
+      order: 2
+    @include mixins.d(s)
+      order: 2
+
+  h2
+    font-size: 3.6rem
+    color: variables.$type-3
+    text-align: center
+    color: variables.$type-3
+
+    @include mixins.d(s)
+      font-size: 2.6rem
+      padding: 3rem 1rem
+
+  span
+    margin: 2rem auto
+    display: block
+    font-size: 3.5rem
+    text-align: center
+    font-weight: bold
+    padding: 1rem 0
+    border-top: 0.4rem solid variables.$white
+    border-bottom: 0.4rem solid variables.$white
+
+  ul
+    max-width: 30rem
+    margin: 2rem auto
+    font-size: 1.6rem
+    font-style: italic
+    color: variables.$type-1
+
+    li
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 1.5rem
+
+      &::after
+        content: ''
+        display: block
+        width: .6rem
+        height: .6rem
+        background: variables.$primary-color
+        border-radius: 50%
+
+  a
+    max-width: 30rem
+    display: block
+    margin: 2rem auto
+    border: 0.4rem solid
+    color: variables.$type-2
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 3.6rem
+    padding: 1.5rem 0
+    text-align: center

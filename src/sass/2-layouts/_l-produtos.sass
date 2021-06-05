@@ -1,0 +1,23 @@
+@use '../1-base/variables'
+@use '../1-base/mixins'
+@use '../1-base/placeholders'
+
+$layout-name: l-produtos
+
+.#{$layout-name}
+  @extend %container-align
+  @extend %border-top-blue
+  @include mixins.padding-vertical(6rem)
+
+  @include mixins.d(s)
+    @include mixins.padding-vertical(3rem)
+
+  h1
+    @include mixins.section-title
+
+  &__container
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    gap: 20px
+
+

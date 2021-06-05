@@ -1,0 +1,13 @@
+{
+  "name": "flexblog",
+  "homepage": "https://cahmoraes.github.io/flex-blog/",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "sass --watch ./src/sass/main.sass:./src/css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.34.1"
+  }
+}
